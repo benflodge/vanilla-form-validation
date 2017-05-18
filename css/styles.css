@@ -1,0 +1,6 @@
+.v-invalid {
+    border-color: red;
+}
+.v-valid {
+    border-color: green;
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Event Form</title>
+		<meta name="description" content="Basic Form and Validator">
+		<meta name="author" content="Ben F Lodge">
+
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<p>Note: all fields marked '*' are mandatory.</p>
+		<form action="https://httpbin.org/post"
+		      method="post" name="event_planner" id="form">
+		    <table>
+		        <tr>
+		            <td>User ID*</td>
+		            <td><input type="text" name="user_id" size="4" maxlength="4"/></td>
+		        </tr>
+		        <tr>
+		            <td>Event ID*</td>
+		            <td><input type="text" name="event_id" size="4" maxlength="4"/></td>
+		        </tr>
+		        <tr>
+		            <td>Date (YYYY-MM-DD)*</td>
+		            <td><input type="text" name="date" size="10" maxlength="10"/></td>
+		        </tr>
+		        <tr>
+		            <td>Start time (HH:MM:SS)*</td>
+		            <td><input type="text" name="start_time" size="8" maxlength="8"/></td>
+		        </tr>
+		        <tr>
+		            <td>Category ID</td>
+		            <td><input type="text" name="category_id" size="3" maxlength="2"/></td>
+		        </tr>
+		        <tr>
+		            <td>Chance %</td>
+		            <td><input type="text" name="chance" size="5" maxlength="5"/></td>
+		        </tr>
+		        <tr>
+		            <td>Finalized</td>
+		            <td><input type="text" name="finalized" size="1" maxlength="1"/></td>
+		        </tr>
+		    </table>
+		    <input type="submit" name="event_planner" value="submit"/>
+		    <hr/>
+		</form>
+
+		<script type="text/javascript" src="js/js_validate.js"></script>
+		<script type="text/javascript" src="js/js_submit_controller.js"></script>
+		<script type="text/javascript" src="js/js_main.js"></script>
+	</body>
+</html>
